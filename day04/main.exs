@@ -2,13 +2,13 @@ defmodule Main do
   @file_path "./input.txt"
 
   def call do
-    reports = read_file()
+    grid = read_file()
 
-    reports
+    grid
     |> process_part1()
     |> then(&IO.puts("part1: #{&1}"))
 
-    reports
+    grid
     |> process_part2()
     |> then(&IO.puts("part2: #{&1}"))
   end
